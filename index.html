@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inside SmolVLA</title>
+<meta name="description" content="A 3D walkthrough of one forward pass of a fine-tuned SmolVLA robot policy, with the real numbers at every step.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+  <script type="module" crossorigin src="./assets/index-C2W_xwO_.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BoAIBmLO.css">
+</head>
+<body>
+<div id="app">
+  <aside id="panel">
+    <header>
+      <p class="eyebrow">Inside SmolVLA</p>
+      <nav id="chapters" aria-label="Chapters"></nav>
+    </header>
+    <article id="step" aria-live="polite">
+      <p class="eyebrow" id="step-chapter"></p>
+      <h1 id="step-title"></h1>
+      <div id="step-body"></div>
+    </article>
+    <footer>
+      <button id="back" type="button">Back</button>
+      <span id="count" class="mono"></span>
+      <button id="next" type="button" class="primary">Next</button>
+    </footer>
+  </aside>
+  <main id="stage">
+    <canvas id="gl" aria-label="3D view of the model's sheets of numbers"></canvas>
+    <div id="labels" aria-hidden="true"></div>
+    <div id="tip" role="status"></div>
+    <div id="layerbar" hidden>
+      <button id="layer-prev" type="button" aria-label="Previous">&lsaquo;</button>
+      <input id="layer" type="range" min="0" max="15" step="1" value="0" aria-label="Layer">
+      <button id="layer-next" type="button" aria-label="Next">&rsaquo;</button>
+      <output id="layer-text" for="layer"></output>
+      <label id="head-wrap" for="head" hidden>Heads
+        <select id="head"></select>
+      </label>
+    </div>
+    <div id="legend" aria-label="Cell colors">
+      <span class="mono">negative</span><i class="ramp"></i><span class="mono">positive</span>
+      <span class="key"><i class="swatch frozen"></i>frozen</span>
+      <span class="key"><i class="swatch trained"></i>trained</span>
+    </div>
+    <button id="reset" type="button" title="Back to this step's view">Reset view</button>
+    <div id="loading"><span id="loading-text">Loading the model's numbers</span></div>
+  </main>
+</div>
+</body>
+</html>
