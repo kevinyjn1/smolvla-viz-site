@@ -3919,9 +3919,7 @@ void main() {
       layers, to 5 seconds of joint angles. The last chapters show what the arm does with them and how the
       model was trained.</p>
       <p class="how">Drag to turn, scroll to zoom, right-drag to move. Point at a sheet to see a cell's value and
-      where it came from.</p>
-      <p class="how">Inspired by Brendan Bycroft's
-      <a href="https://bbycroft.net/llm" target="_blank" rel="noopener">LLM Visualization</a>.</p>`,focus:"all",view:{ids:["table_raw","state_in","sequence","mask","ghost_vlm","ghost_expert","plot","loss"],dir:[1,.42,.42],pad:.94}},{id:"cameras",chapter:1,title:"Two cameras",body:`
+      where it came from.</p>`,focus:"all",view:{ids:["table_raw","state_in","sequence","mask","ghost_vlm","ghost_expert","plot","loss"],dir:[1,.42,.42],pad:.94}},{id:"cameras",chapter:1,title:"Two cameras",body:`
       <p>Ten times a second the policy gets one 640 x 480 picture from the <b>table camera</b> and one from the
       <b>wrist camera</b>.</p>
       <p>In this frame the gripper is closing on the yellow cube. A hand is in the picture because the demos were

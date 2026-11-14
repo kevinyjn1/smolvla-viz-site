@@ -11,5 +11,4 @@ action expert, to 5 seconds of joint angles for a Unitree D1 arm.
 - A layer slider walks through both stacks of 16 layers, and a menu picks single attention heads: some look almost
   entirely at the bin, the gripper or the cube.
 
-This repository holds only the built site. Inspired by Brendan Bycroft's
-[LLM Visualization](https://bbycroft.net/llm); written from scratch with [three.js](https://threejs.org).
+This repository holds only the built site. It is built with [three.js](https://threejs.org).
