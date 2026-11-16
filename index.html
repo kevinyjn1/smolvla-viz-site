@@ -7,20 +7,24 @@
 <meta name="description" content="A 3D walkthrough of one forward pass of a fine-tuned SmolVLA robot policy, with the real numbers at every step, and rectified flow built from scratch, step by step.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
-  <script type="module" crossorigin src="./assets/index-IjpUk3jO.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-COrAsaVy.css">
+  <script type="module" crossorigin src="./assets/index-VYKzrgG-.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CS4qiNNl.css">
 </head>
 <body>
 <nav id="tabs" aria-label="Pages"></nav>
 <div id="app">
   <aside id="panel">
     <header>
-      <p class="eyebrow">Inside SmolVLA</p>
+      <div class="head-row">
+        <p class="eyebrow">Inside SmolVLA</p>
+        <button id="keys" type="button" aria-pressed="false" title="Back and Next stop only at the key slides">Key slides only</button>
+      </div>
       <nav id="chapters" aria-label="Chapters"></nav>
     </header>
     <article id="step" aria-live="polite">
       <p class="eyebrow" id="step-chapter"></p>
       <h1 id="step-title"></h1>
+      <p id="step-key" hidden><b>Key slide</b><span></span></p>
       <div id="step-body"></div>
     </article>
     <footer>
